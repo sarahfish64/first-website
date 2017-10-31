@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+/* general */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    background-color: rgba(0, 234, 120, 0.3);
+}
+
+.cv {
+    width: 700px;
+    margin: 100px auto;
+    background-color: #fff;
+    box-shadow: 0 5 22px rgba(0, 0, 0, .5);
+    position: relative;
+    z-index: 2;
+    /* z-index用來調整塗層順序:1-999
+    調整塗層都要有z-index；且position:不可以是static */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.decoration-box {
+    width: 100%;
+    height: 400px;
+    background-color: #E2C0B9;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.cv-header,
+.cv-body,
+.cv-footer {
+    padding: 30px 50px;
+}
+
+
+/* general */
+
+
+/* cv-header */
+
+.cv-header {
+    background-color: #29323b;
+    color: white;
+    font-family: 'Francois One', sans-serif;
+}
+
+
+/* cv-header */
+
+
+/* cv-body */
+
+.experience {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    position: relative;
+    border-bottom: 1px dashed #AAA;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.experience:last-child
+/* 選擇class experience的最後一個小孩 */
+
+{
+    border-bottom: none;
+}
+
+.company-logo {
+    top: 30px;
+    right: 0;
+    position: absolute;
+    /*static=預設模式，不可以被作為定位參考(關掉)
+    relative->與預設模式依樣，但可以被定位
+    absolute->找viewport做定位*/
+    height: 40px;
+}
+
+
+/* cv-body */
+
+
+/* cv-footer */
+
+.cv-footer {
+    background-color: #29323b;
+}
+
+.social-link {
+    color: white;
+    background-color: rgba(255, 255, 255, .3);
+    border: 1px dashed white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    /* 可以透過行高=高度，來做置中，按鈕常用 */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /*手動將a變成區塊元素
+    inline:行內
+    inline-block:讀得懂width,height，但不換行
+    block*/
+    vertical-align: top;
+    border-radius: 8px;
+    /* 圓角 */
+}
+
+
+/* cv-footer */
+
+
+/* 主色(primary) #29323b */
+
+
+/* 強調色(accent) #E2C0B9 */
+
+
+/* 字體顏色 #333 */
